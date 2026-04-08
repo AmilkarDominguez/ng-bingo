@@ -1,0 +1,44 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia a 'master' si es el nombre de tu rama principal
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24 # Usa la versión de Node de tu proyecto
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Construir la aplicación
+        run: npm run build -- --configuration production --base-href /ng-bingo/
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Angular por defecto guarda el build en dist/[nombre-del-proyecto]
+          # Verifica tu angular.json para confirmar la ruta de "outputPath"
+          path: dist/ng-bingo/browser
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
