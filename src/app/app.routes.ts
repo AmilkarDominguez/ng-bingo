@@ -2,12 +2,13 @@ import { Routes } from '@angular/router';
 import { Register } from './features/register/register';
 import { WelcomeLayout } from './layouts/welcome-layout/welcome-layout';
 import { MainLayout } from './layouts/main-layout/main-layout';
+import { Bingo } from './features/bingo/bingo';
 
 export const routes: Routes = [
-  // {
-  //   path: 'welcome',
-  //   component: WelcomeLayout
-  // },
+  {
+    path: '',
+    component: Bingo
+  },
   // {
   //   path: 'bingo',
   //   component: MainLayout,
@@ -18,8 +19,8 @@ export const routes: Routes = [
   //     },
   //   ],
   // },
-  // {
-  //   path: '**',
-  //   redirectTo: 'bingo',
-  // },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
