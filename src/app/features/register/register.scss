@@ -1,0 +1,22 @@
+.container {
+  gap: 1rem;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+

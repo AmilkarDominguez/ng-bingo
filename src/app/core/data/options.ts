@@ -1,0 +1,38 @@
+export const options = [
+  //Comunidad y Conexión
+  'Es su primer evento de GDG/WTM.',
+  'Ha sido mentora de alguien más.',
+  'Conoce una comunidad local de mujeres.',
+  'Ha organizado un evento comunitario.',
+  'Viene acompañada de una colega.',
+  'Ha dado una charla o taller.',
+  'Sigue a una referente tech en redes.',
+  //Crecimiento y Carrera
+  'Cambió de carrera hacia la tecnología.',
+  'Ha superado el "síndrome del impostor".',
+  'Aprendió una habilidad nueva en 2026.',
+  'Lidera un equipo o proyecto.',
+  'Ha negociado un ascenso o aumento.',
+  'Trabaja en un entorno remoto/híbrido.',
+  'Ha contribuido a código abierto (Open Source).',
+  //IA y Productividad (Contexto 2026)
+  'Usa IA para automatizar tareas diarias.',
+  'Ha creado un prompt útil esta semana.',
+  'Ha probado Gemini 3 o modelos nuevos.',
+  'Usa herramientas no-code para sus ideas.',
+  'Tiene un "truco" de productividad favorito.',
+  //Lifestyle y Lado Humano
+  'Habla más de dos idiomas.',
+  'Tiene un hobby creativo (arte, música, etc.).',
+  'Hace deporte para desconectar del código.',
+  'Ha viajado a otro país recientemente.',
+  'Tiene una mascota que aparece en sus videollamadas.',
+  'Te puede recomendar un libro de liderazgo.',
+  'Prefiere el café/té para programar.',
+  //Inspiración y Aliadas
+  'Ha defendido la diversidad en su trabajo.',
+  'Conoce la historia de una mujer pionera en tech.',
+  'Ha participado en un Hackathon.',
+  'Tiene un podcast favorito sobre tecnología.',
+  'Siempre ayuda a resolver dudas en Slack/Discord.',
+];

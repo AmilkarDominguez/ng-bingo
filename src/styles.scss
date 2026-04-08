@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=M+PLUS+Rounded+1c&display=swap');
+
+:root {
+  --bg-color: #171717;
+  --fg-color: #fefefe;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}

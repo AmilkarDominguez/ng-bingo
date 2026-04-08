@@ -1,0 +1,19 @@
+<div class="flip-container" [class.flipped]="isFlipped">
+  <div class="flipper" >
+    <div class="front" [class.done]="option.done" (click)="toggleFlip()">
+      <p>{{ option.text }}</p>
+      <small>(Click para editar)</small>
+    </div>
+    <div class="back">
+      <label for="name">Introduce el nombre:</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]=" option.name"
+        placeholder="Escribe aquí..."
+        autocomplete="off"
+      >
+      <button (click)="toggleFlip()">Guardar</button>
+    </div>
+  </div>
+</div>
