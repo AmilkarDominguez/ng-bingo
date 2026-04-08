@@ -7,23 +7,23 @@
     <app-card [option]="item"></app-card>
     }
   </div>
-}
-
-
-
-  <!--
-<h1>Data</h1>
-<table>
-  <tr>
-    <th>Text</th>
-    <th>Done</th>
-    <th>Name</th>
-  </tr>
-  @for (item of options; track $index) {
-  <tr>
-    <td>{{item.text}}</td>
-    <td>{{item.done}}</td>
-    <td>{{item.name}}</td>
-  </tr>
   }
-</table> -->
+
+  @if(counterDone()>=LIMIT){
+
+  <article class="results">
+    Resultados
+    <table>
+      <tr>
+        <th>Opción</th>
+        <th>Nombre</th>
+      </tr>
+      @for (item of options; track $index) {
+      <tr>
+        <td>{{item.text}}</td>
+        <td>: {{item.name}} Lorem ipsum dolor sit</td>
+      </tr>
+      }
+    </table>
+  </article>
+  }
