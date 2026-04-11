@@ -35,4 +35,12 @@ export const options = [
   'Ha participado en un Hackathon.',
   'Tiene un podcast favorito sobre tecnología.',
   'Siempre ayuda a resolver dudas en Slack/Discord.',
+  //custom
+  'Ha organizado un evento o taller (aunque sea pequeño).',
+  'Ayudó a un colega con un concepto difícil recientemente.',
+  'Aprende una herramienta de forma autodidacta.',
+  'Busca trabajar 100% remoto para el extranjero.',
+  'Es voluntaria en una comunidad (GDG, WTM, etc.).',
+  'Estudia y trabaja al mismo tiempo actualmente.',
+  'Te puede contar su meme favorito sobre tecnología.',
 ];
